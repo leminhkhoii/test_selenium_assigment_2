@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 30-Oct-2024 at 22:34:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">7 tests took 00:02:35.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">7 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.10&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\java\\&#34;}, &#34;tests&#34;: {&#34;test_login.py::test_login_and_logout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_login_and_logout&#34;, &#34;duration&#34;: &#34;00:00:35&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_login_and_logout&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:35&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nError locating the Login link: Message: \nStacktrace:\n\tGetHandleVerifier [0x00007FF6FB223AF5+28005]\n\t(No symbol) [0x00007FF6FB1883F0]\n\t(No symbol) [0x00007FF6FB02580A]\n\t(No symbol) [0x00007FF6FB075A3E]\n\t(No symbol) [0x00007FF6FB075D2C]\n\t(No symbol) [0x00007FF6FB0BEA97]\n\t(No symbol) [0x00007FF6FB09BA7F]\n\t(No symbol) [0x00007FF6FB0BB8B3]\n\t(No symbol) [0x00007FF6FB09B7E3]\n\t(No symbol) [0x00007FF6FB0675C8]\n\t(No symbol) [0x00007FF6FB068731]\n\tGetHandleVerifier [0x00007FF6FB51646D+3118813]\n\tGetHandleVerifier [0x00007FF6FB566CC0+3448624]\n\tGetHandleVerifier [0x00007FF6FB55CF3D+3408301]\n\tGetHandleVerifier [0x00007FF6FB2EA44B+841403]\n\t(No symbol) [0x00007FF6FB19344F]\n\t(No symbol) [0x00007FF6FB18F4C4]\n\t(No symbol) [0x00007FF6FB18F65D]\n\t(No symbol) [0x00007FF6FB17EBB9]\n\tBaseThreadInitThunk [0x00007FFE336F7374+20]\n\tRtlUserThreadStart [0x00007FFE33DBCC91+33]\n\nCurrent page source: &amp;lt;html dir=&amp;quot;ltr&amp;quot; lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;\n  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;\n  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;\n  &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;\n  &amp;lt;title&amp;gt;Your Store&amp;lt;/title&amp;gt;\n  &amp;lt;base href=&amp;quot;https://demo.opencart.com/&amp;quot;&amp;gt;\n      &amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;My Store&amp;quot;&amp;gt;\n      &amp;lt;script src=&amp;quot;catalog/view/javascript/jquery/jquery-3.7.1.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/bootstrap.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; media=&amp;quot;screen&amp;quot;&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/fonts/fontawesome/css/all.min.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/stylesheet.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/moment.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/daterangepicker.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/javascript/jquery/datetimepicker/daterangepicker.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;\n  &amp;lt;script src=&amp;quot;catalog/view/javascript/common.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n        &amp;lt;/head&amp;gt;\n&amp;lt;body&amp;gt;\n&amp;lt;div id=&amp;quot;alert&amp;quot; class=&amp;quot;toast-container position-fixed top-0 end-0 p-3&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\n&amp;lt;nav id=&amp;quot;top&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;nav float-start&amp;quot;&amp;gt;\n      &amp;lt;ul class=&amp;quot;list-inline&amp;quot;&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;  &amp;lt;form action=&amp;quot;https://demo.opencart.com/en-gb?route=common/currency.save&amp;quot; method=&amp;quot;post&amp;quot; enctype=&amp;quot;multipart/form-data&amp;quot; id=&amp;quot;form-currency&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;dropdown&amp;quot;&amp;gt;\n      &amp;lt;a href=&amp;quot;#&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;$&amp;lt;/strong&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Currency&amp;lt;/span&amp;gt; &amp;lt;i class=&amp;quot;fa-solid fa-caret-down&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;\n      &amp;lt;ul class=&amp;quot;dropdown-menu&amp;quot;&amp;gt;\n                              &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;EUR&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;\u20ac Euro&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;GBP&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;\u00a3 Pound Sterling&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;USD&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;$ US Dollar&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                        &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;code&amp;quot; value=&amp;quot;&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;redirect&amp;quot; value=&amp;quot;https://demo.opencart.com?route=common/home&amp;quot;&amp;gt;\n  &amp;lt;/form&amp;gt;\n&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;div class=&amp;quot;nav float-end&amp;quot;&amp;gt;\n      &amp;lt;ul class=&amp;quot;list-inline&amp;quot;&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/contact&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-phone&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;123456789&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;\n          &amp;lt;div class=&amp;quot;dropdown&amp;quot;&amp;gt;\n            &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-user&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;My Account&amp;lt;/span&amp;gt; &amp;lt;i class=&amp;quot;fa-solid fa-caret-down&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;\n            &amp;lt;ul class=&amp;quot;dropdown-menu dropdown-menu-right&amp;quot;&amp;gt;\n                              &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/register&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;Register&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/login&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;Login&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                          &amp;lt;/ul&amp;gt;\n          &amp;lt;/div&amp;gt;\n        &amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist&amp;quot; id=&amp;quot;wishlist-total&amp;quot; title=&amp;quot;Wish List (0)&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Wish List (0)&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart&amp;quot; title=&amp;quot;Shopping Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-cart-shopping&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Shopping Cart&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/checkout&amp;quot; title=&amp;quot;Checkout&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-share&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Checkout&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/nav&amp;gt;\n&amp;lt;header&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;col-md-3 col-lg-4&amp;quot;&amp;gt;\n        &amp;lt;div id=&amp;quot;logo&amp;quot;&amp;gt;\n                      &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=common/home&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/catalog/opencart-logo.png&amp;quot; title=&amp;quot;Your Store&amp;quot; alt=&amp;quot;Your Store&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-md-5&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;search&amp;quot; class=&amp;quot;input-group mb-3&amp;quot;&amp;gt;\n\t&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;search&amp;quot; value=&amp;quot;&amp;quot; placeholder=&amp;quot;Search&amp;quot; class=&amp;quot;form-control form-control-lg&amp;quot;&amp;gt;\n\t&amp;lt;button type=&amp;quot;button&amp;quot; data-lang=&amp;quot;en-gb&amp;quot; class=&amp;quot;btn btn-light btn-lg&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-magnifying-glass&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n      &amp;lt;div id=&amp;quot;header-cart&amp;quot; class=&amp;quot;col-md-4 col-lg-3 mb-2&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;dropdown d-grid&amp;quot;&amp;gt;\n  &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot; class=&amp;quot;btn btn-lg btn-inverse btn-block dropdown-toggle&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-cart-shopping&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; 0 item(s) - $0.00&amp;lt;/button&amp;gt;\n  &amp;lt;ul class=&amp;quot;dropdown-menu dropdown-menu-end p-2&amp;quot;&amp;gt;\n          &amp;lt;li class=&amp;quot;text-center p-4&amp;quot;&amp;gt;Your shopping cart is empty!&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/header&amp;gt;\n&amp;lt;main&amp;gt;\n    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;nav id=&amp;quot;menu&amp;quot; class=&amp;quot;navbar navbar-expand-lg navbar-light bg-primary&amp;quot;&amp;gt;\n      &amp;lt;div id=&amp;quot;category&amp;quot; class=&amp;quot;d-block d-sm-block d-lg-none&amp;quot;&amp;gt;Categories&amp;lt;/div&amp;gt;\n      &amp;lt;button class=&amp;quot;navbar-toggler&amp;quot; type=&amp;quot;button&amp;quot; data-bs-toggle=&amp;quot;collapse&amp;quot; data-bs-target=&amp;quot;#narbar-menu&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-bars&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;div class=&amp;quot;collapse navbar-collapse&amp;quot; id=&amp;quot;narbar-menu&amp;quot;&amp;gt;\n        &amp;lt;ul class=&amp;quot;nav navbar-nav&amp;quot;&amp;gt;\n                                    &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Desktops&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops/pc&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;PC (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops/mac&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Mac (1)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Desktops&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Laptops &amp;amp;amp; Notebooks&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook/macs&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Macs (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook/windows&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Windows (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Laptops &amp;amp;amp; Notebooks&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Components&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/mouse&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Mice and Trackballs (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/monitor&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Monitors (2)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/printers&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Printers (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/scanner&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Scanners (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/web-camera&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Web Cameras (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Components&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/tablet&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Tablets&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/software&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Software&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/smartphone&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Phones &amp;amp;amp; PDAs&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/cameras&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Cameras&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;MP3 Players&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;margin-left: -215.953px;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-11&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 11 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-12&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 12 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-15&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 15 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-16&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 16 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-17&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 17 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-18&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 18 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-19&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 19 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-20&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 20 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-21&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 21 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-22&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 22 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-23&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 23 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-24&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 24 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-4&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 4 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-5&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 5 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-6&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 6 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-7&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 7 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-8&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 8 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-9&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 9 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All MP3 Players&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                              &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n    &amp;lt;/nav&amp;gt;\n  &amp;lt;/div&amp;gt;\n\n\n&amp;lt;div id=&amp;quot;common-home&amp;quot; class=&amp;quot;container&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n    &amp;lt;div id=&amp;quot;content&amp;quot; class=&amp;quot;col&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;carousel-banner-0&amp;quot; class=&amp;quot;carousel slide&amp;quot; data-bs-ride=&amp;quot;carousel&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;carousel-indicators&amp;quot;&amp;gt;\n                    &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-target=&amp;quot;#carousel-banner-0&amp;quot; data-bs-slide-to=&amp;quot;0&amp;quot; class=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;\n                      &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-target=&amp;quot;#carousel-banner-0&amp;quot; data-bs-slide-to=&amp;quot;1&amp;quot; class=&amp;quot;active&amp;quot; aria-current=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;\n                  &amp;lt;/div&amp;gt;\n    &amp;lt;div class=&amp;quot;carousel-inner&amp;quot;&amp;gt;\n              &amp;lt;div class=&amp;quot;carousel-item&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;row justify-content-center&amp;quot;&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-12 text-center&amp;quot;&amp;gt;\n                              &amp;lt;a href=&amp;quot;index.php?route=product/product&amp;amp;amp;path=57&amp;amp;amp;product_id=49&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg&amp;quot; alt=&amp;quot;iPhone 6&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n                &amp;lt;div class=&amp;quot;carousel-item active&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;row justify-content-center&amp;quot;&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-12 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg&amp;quot; alt=&amp;quot;MacBookAir&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n            &amp;lt;/div&amp;gt;\n      &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;carousel-control-prev&amp;quot; data-bs-target=&amp;quot;#carousel-banner-0&amp;quot; data-bs-slide=&amp;quot;prev&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;fa-solid fa-chevron-left&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;\n    &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;carousel-control-next&amp;quot; data-bs-target=&amp;quot;#carousel-banner-0&amp;quot; data-bs-slide=&amp;quot;next&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;fa-solid fa-chevron-right&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;!--\n$(document).ready(function () {\n    new bootstrap.Carousel(document.querySelector(&amp;#x27;#carousel-banner-0&amp;#x27;), {\n        ride: &amp;#x27;carousel&amp;#x27;,\n        interval: 5000,\n        wrap: true\n    });\n});\n//--&amp;gt;&amp;lt;/script&amp;gt;\n\n&amp;lt;h3&amp;gt;Featured&amp;lt;/h3&amp;gt;\n&amp;lt;div class=&amp;quot;row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;product-thumb&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;image&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/macbook&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/macbook_1-200x200.jpg&amp;quot; alt=&amp;quot;MacBook&amp;quot; title=&amp;quot;MacBook&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;\n  &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;description&amp;quot;&amp;gt;\n      &amp;lt;h4&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/macbook&amp;quot;&amp;gt;MacBook&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt;\n      &amp;lt;p&amp;gt;Intel Core 2 Duo processor\n\t\n\t\tPowered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..&amp;lt;/p&amp;gt;\n              &amp;lt;div class=&amp;quot;price&amp;quot;&amp;gt;\n                      &amp;lt;span class=&amp;quot;price-new&amp;quot;&amp;gt;$602.00&amp;lt;/span&amp;gt;\n                                &amp;lt;span class=&amp;quot;price-tax&amp;quot;&amp;gt;Ex Tax: $500.00&amp;lt;/span&amp;gt;\n                  &amp;lt;/div&amp;gt;\n                &amp;lt;/div&amp;gt;\n    &amp;lt;form method=&amp;quot;post&amp;quot; data-oc-toggle=&amp;quot;ajax&amp;quot; data-oc-load=&amp;quot;https://demo.opencart.com/en-gb?route=common/cart.info&amp;quot; data-oc-target=&amp;quot;#header-cart&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;button-group&amp;quot;&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-shopping-cart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Wish List&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=product/compare.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Compare this Product&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-arrow-right-arrow-left&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;product_id&amp;quot; value=&amp;quot;43&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;quantity&amp;quot; value=&amp;quot;1&amp;quot;&amp;gt;\n    &amp;lt;/form&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;product-thumb&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;image&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/iphone&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/iphone_1-200x200.jpg&amp;quot; alt=&amp;quot;iPhone&amp;quot; title=&amp;quot;iPhone&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;\n  &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;description&amp;quot;&amp;gt;\n      &amp;lt;h4&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/iphone&amp;quot;&amp;gt;iPhone&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt;\n      &amp;lt;p&amp;gt;iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name o..&amp;lt;/p&amp;gt;\n              &amp;lt;div class=&amp;quot;price&amp;quot;&amp;gt;\n                      &amp;lt;span class=&amp;quot;price-new&amp;quot;&amp;gt;$123.20&amp;lt;/span&amp;gt;\n                                &amp;lt;span class=&amp;quot;price-tax&amp;quot;&amp;gt;Ex Tax: $101.00&amp;lt;/span&amp;gt;\n                  &amp;lt;/div&amp;gt;\n                &amp;lt;/div&amp;gt;\n    &amp;lt;form method=&amp;quot;post&amp;quot; data-oc-toggle=&amp;quot;ajax&amp;quot; data-oc-load=&amp;quot;https://demo.opencart.com/en-gb?route=common/cart.info&amp;quot; data-oc-target=&amp;quot;#header-cart&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;button-group&amp;quot;&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-shopping-cart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Wish List&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=product/compare.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Compare this Product&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-arrow-right-arrow-left&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;product_id&amp;quot; value=&amp;quot;40&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;quantity&amp;quot; value=&amp;quot;1&amp;quot;&amp;gt;\n    &amp;lt;/form&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;product-thumb&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;image&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/apple-cinema&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/apple_cinema_30-200x200.jpg&amp;quot; alt=&amp;quot;Apple Cinema 30&amp;amp;quot;&amp;quot; title=&amp;quot;Apple Cinema 30&amp;amp;quot;&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;\n  &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;description&amp;quot;&amp;gt;\n      &amp;lt;h4&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/apple-cinema&amp;quot;&amp;gt;Apple Cinema 30&amp;quot;&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt;\n      &amp;lt;p&amp;gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed speci..&amp;lt;/p&amp;gt;\n              &amp;lt;div class=&amp;quot;price&amp;quot;&amp;gt;\n                      &amp;lt;span class=&amp;quot;price-new&amp;quot;&amp;gt;$110.00&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;price-old&amp;quot;&amp;gt;$122.00&amp;lt;/span&amp;gt;\n                                &amp;lt;span class=&amp;quot;price-tax&amp;quot;&amp;gt;Ex Tax: $90.00&amp;lt;/span&amp;gt;\n                  &amp;lt;/div&amp;gt;\n                &amp;lt;/div&amp;gt;\n    &amp;lt;form method=&amp;quot;post&amp;quot; data-oc-toggle=&amp;quot;ajax&amp;quot; data-oc-load=&amp;quot;https://demo.opencart.com/en-gb?route=common/cart.info&amp;quot; data-oc-target=&amp;quot;#header-cart&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;button-group&amp;quot;&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-shopping-cart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Wish List&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=product/compare.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Compare this Product&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-arrow-right-arrow-left&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;product_id&amp;quot; value=&amp;quot;42&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;quantity&amp;quot; value=&amp;quot;2&amp;quot;&amp;gt;\n    &amp;lt;/form&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;product-thumb&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;image&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/canon-eos-5d&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg&amp;quot; alt=&amp;quot;Canon EOS 5D&amp;quot; title=&amp;quot;Canon EOS 5D&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;\n  &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;description&amp;quot;&amp;gt;\n      &amp;lt;h4&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/product/canon-eos-5d&amp;quot;&amp;gt;Canon EOS 5D&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt;\n      &amp;lt;p&amp;gt;Canon&amp;#x27;s press material for the EOS 5D states that it &amp;#x27;defines (a) new D-SLR category&amp;#x27;, while we&amp;#x27;re n..&amp;lt;/p&amp;gt;\n              &amp;lt;div class=&amp;quot;price&amp;quot;&amp;gt;\n                      &amp;lt;span class=&amp;quot;price-new&amp;quot;&amp;gt;$98.00&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;price-old&amp;quot;&amp;gt;$122.00&amp;lt;/span&amp;gt;\n                                &amp;lt;span class=&amp;quot;price-tax&amp;quot;&amp;gt;Ex Tax: $80.00&amp;lt;/span&amp;gt;\n                  &amp;lt;/div&amp;gt;\n                &amp;lt;/div&amp;gt;\n    &amp;lt;form method=&amp;quot;post&amp;quot; data-oc-toggle=&amp;quot;ajax&amp;quot; data-oc-load=&amp;quot;https://demo.opencart.com/en-gb?route=common/cart.info&amp;quot; data-oc-target=&amp;quot;#header-cart&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;button-group&amp;quot;&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-shopping-cart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Add to Wish List&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n        &amp;lt;button type=&amp;quot;submit&amp;quot; formaction=&amp;quot;https://demo.opencart.com/en-gb?route=product/compare.add&amp;quot; data-bs-toggle=&amp;quot;tooltip&amp;quot; title=&amp;quot;Compare this Product&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-arrow-right-arrow-left&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;product_id&amp;quot; value=&amp;quot;30&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;quantity&amp;quot; value=&amp;quot;1&amp;quot;&amp;gt;\n    &amp;lt;/form&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;\n  &amp;lt;/div&amp;gt;\n\n&amp;lt;div id=&amp;quot;carousel-banner-1&amp;quot; class=&amp;quot;carousel slide&amp;quot; data-bs-ride=&amp;quot;carousel&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;carousel-indicators&amp;quot;&amp;gt;\n                    &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-target=&amp;quot;#carousel-banner-1&amp;quot; data-bs-slide-to=&amp;quot;0&amp;quot; class=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;\n                      &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-target=&amp;quot;#carousel-banner-1&amp;quot; data-bs-slide-to=&amp;quot;1&amp;quot; class=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;\n                      &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-target=&amp;quot;#carousel-banner-1&amp;quot; data-bs-slide-to=&amp;quot;2&amp;quot; class=&amp;quot;active&amp;quot; aria-current=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;\n                  &amp;lt;/div&amp;gt;\n    &amp;lt;div class=&amp;quot;carousel-inner&amp;quot;&amp;gt;\n              &amp;lt;div class=&amp;quot;carousel-item&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;row justify-content-center&amp;quot;&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/harley-130x100.png&amp;quot; alt=&amp;quot;Harley Davidson&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/dell-130x100.png&amp;quot; alt=&amp;quot;Dell&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/disney-130x100.png&amp;quot; alt=&amp;quot;Disney&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/cocacola-130x100.png&amp;quot; alt=&amp;quot;Coca Cola&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/burgerking-130x100.png&amp;quot; alt=&amp;quot;Burger King&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n                &amp;lt;div class=&amp;quot;carousel-item&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;row justify-content-center&amp;quot;&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/canon-130x100.png&amp;quot; alt=&amp;quot;Canon&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/nfl-130x100.png&amp;quot; alt=&amp;quot;NFL&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/redbull-130x100.png&amp;quot; alt=&amp;quot;RedBull&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/sony-130x100.png&amp;quot; alt=&amp;quot;Sony&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/starbucks-130x100.png&amp;quot; alt=&amp;quot;Starbucks&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n                &amp;lt;div class=&amp;quot;carousel-item active&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;row justify-content-center&amp;quot;&amp;gt;\n                      &amp;lt;div class=&amp;quot;col-2 text-center&amp;quot;&amp;gt;\n                              &amp;lt;img src=&amp;quot;https://demo.opencart.com/image/cache/catalog/demo/manufacturer/nintendo-130x100.png&amp;quot; alt=&amp;quot;Nintendo&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;\n                          &amp;lt;/div&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n            &amp;lt;/div&amp;gt;\n      &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;carousel-control-prev&amp;quot; data-bs-target=&amp;quot;#carousel-banner-1&amp;quot; data-bs-slide=&amp;quot;prev&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;fa-solid fa-chevron-left&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;\n    &amp;lt;button type=&amp;quot;button&amp;quot; class=&amp;quot;carousel-control-next&amp;quot; data-bs-target=&amp;quot;#carousel-banner-1&amp;quot; data-bs-slide=&amp;quot;next&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;fa-solid fa-chevron-right&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;!--\n$(document).ready(function () {\n    new bootstrap.Carousel(document.querySelector(&amp;#x27;#carousel-banner-1&amp;#x27;), {\n        ride: &amp;#x27;carousel&amp;#x27;,\n        interval: 5000,\n        wrap: true\n    });\n});\n//--&amp;gt;&amp;lt;/script&amp;gt;\n\n&amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/main&amp;gt;\n&amp;lt;footer&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Information&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/terms&amp;quot;&amp;gt;Terms &amp;amp;amp; Conditions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/delivery&amp;quot;&amp;gt;Delivery Information&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/about-us&amp;quot;&amp;gt;About Us&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/privacy&amp;quot;&amp;gt;Privacy Policy&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                  &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Customer Service&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/contact&amp;quot;&amp;gt;Contact Us&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/returns.add&amp;quot;&amp;gt;Returns&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/sitemap&amp;quot;&amp;gt;Site Map&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Extras&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/brands&amp;quot;&amp;gt;Brands&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/voucher&amp;quot;&amp;gt;Gift Certificates&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/affiliate&amp;quot;&amp;gt;Affiliate&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=product/special&amp;quot;&amp;gt;Specials&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;My Account&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/account&amp;quot;&amp;gt;My Account&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/order&amp;quot;&amp;gt;Order History&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist&amp;quot;&amp;gt;Wish List&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/newsletter&amp;quot;&amp;gt;Newsletter&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;hr&amp;gt;\n    &amp;lt;p&amp;gt;Powered By &amp;lt;a href=&amp;quot;https://www.opencart.com&amp;quot;&amp;gt;OpenCart&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt; Your Store \u00a9 2024&amp;lt;/p&amp;gt;\n    &amp;lt;!--\nOpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.\nPlease donate via PayPal to donate@opencart.com\n//--&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/footer&amp;gt;\n\n&amp;lt;script src=&amp;quot;catalog/view/javascript/bootstrap/js/bootstrap.bundle.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n\n&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;\n&#34;}], &#34;test_login.py::test_invalid_email_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_invalid_email_login&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_invalid_email_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test_login.py::test_invalid_password_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_invalid_password_login&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_invalid_password_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test_login.py::test_empty_password_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_empty_password_login&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_empty_password_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test_login.py::test_empty_email_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_empty_email_login&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_empty_email_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test_login.py::test_special_character_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_special_character_login&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_special_character_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test_login.py::test_sql_injection_attempt&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test_login.py::test_sql_injection_attempt&#34;, &#34;duration&#34;: &#34;00:00:36&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_login.py::test_sql_injection_attempt&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:36&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nError message not found or assertion failed: Message: \nStacktrace:\n\tGetHandleVerifier [0x00007FF6FB223AF5+28005]\n\t(No symbol) [0x00007FF6FB1883F0]\n\t(No symbol) [0x00007FF6FB02580A]\n\t(No symbol) [0x00007FF6FB075A3E]\n\t(No symbol) [0x00007FF6FB075D2C]\n\t(No symbol) [0x00007FF6FB0BEA97]\n\t(No symbol) [0x00007FF6FB09BA7F]\n\t(No symbol) [0x00007FF6FB0BB8B3]\n\t(No symbol) [0x00007FF6FB09B7E3]\n\t(No symbol) [0x00007FF6FB0675C8]\n\t(No symbol) [0x00007FF6FB068731]\n\tGetHandleVerifier [0x00007FF6FB51646D+3118813]\n\tGetHandleVerifier [0x00007FF6FB566CC0+3448624]\n\tGetHandleVerifier [0x00007FF6FB55CF3D+3408301]\n\tGetHandleVerifier [0x00007FF6FB2EA44B+841403]\n\t(No symbol) [0x00007FF6FB19344F]\n\t(No symbol) [0x00007FF6FB18F4C4]\n\t(No symbol) [0x00007FF6FB18F65D]\n\t(No symbol) [0x00007FF6FB17EBB9]\n\tBaseThreadInitThunk [0x00007FFE336F7374+20]\n\tRtlUserThreadStart [0x00007FFE33DBCC91+33]\n\nCurrent page source: &amp;lt;html dir=&amp;quot;ltr&amp;quot; lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;\n  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;\n  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt;\n  &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;\n  &amp;lt;title&amp;gt;Account Login&amp;lt;/title&amp;gt;\n  &amp;lt;base href=&amp;quot;https://demo.opencart.com/&amp;quot;&amp;gt;\n      &amp;lt;script src=&amp;quot;catalog/view/javascript/jquery/jquery-3.7.1.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/bootstrap.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; media=&amp;quot;screen&amp;quot;&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/fonts/fontawesome/css/all.min.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/stylesheet/stylesheet.css&amp;quot; type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/moment.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;catalog/view/javascript/jquery/datetimepicker/daterangepicker.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n  &amp;lt;link href=&amp;quot;catalog/view/javascript/jquery/datetimepicker/daterangepicker.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;\n  &amp;lt;script src=&amp;quot;catalog/view/javascript/common.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n        &amp;lt;/head&amp;gt;\n&amp;lt;body&amp;gt;\n&amp;lt;div id=&amp;quot;alert&amp;quot; class=&amp;quot;toast-container position-fixed top-0 end-0 p-3&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\n&amp;lt;nav id=&amp;quot;top&amp;quot;&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;nav float-start&amp;quot;&amp;gt;\n      &amp;lt;ul class=&amp;quot;list-inline&amp;quot;&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;  &amp;lt;form action=&amp;quot;https://demo.opencart.com/en-gb?route=common/currency.save&amp;quot; method=&amp;quot;post&amp;quot; enctype=&amp;quot;multipart/form-data&amp;quot; id=&amp;quot;form-currency&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;dropdown&amp;quot;&amp;gt;\n      &amp;lt;a href=&amp;quot;#&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;$&amp;lt;/strong&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Currency&amp;lt;/span&amp;gt; &amp;lt;i class=&amp;quot;fa-solid fa-caret-down&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;\n      &amp;lt;ul class=&amp;quot;dropdown-menu&amp;quot;&amp;gt;\n                              &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;EUR&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;\u20ac Euro&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;GBP&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;\u00a3 Pound Sterling&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;USD&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;$ US Dollar&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                        &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;code&amp;quot; value=&amp;quot;&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;redirect&amp;quot; value=&amp;quot;https://demo.opencart.com/en-gb?route=account/login&amp;quot;&amp;gt;\n  &amp;lt;/form&amp;gt;\n&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;div class=&amp;quot;nav float-end&amp;quot;&amp;gt;\n      &amp;lt;ul class=&amp;quot;list-inline&amp;quot;&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/contact&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-phone&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;123456789&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;\n          &amp;lt;div class=&amp;quot;dropdown&amp;quot;&amp;gt;\n            &amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-user&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;My Account&amp;lt;/span&amp;gt; &amp;lt;i class=&amp;quot;fa-solid fa-caret-down&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;\n            &amp;lt;ul class=&amp;quot;dropdown-menu dropdown-menu-right&amp;quot;&amp;gt;\n                              &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/register&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;Register&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/login&amp;quot; class=&amp;quot;dropdown-item&amp;quot;&amp;gt;Login&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                          &amp;lt;/ul&amp;gt;\n          &amp;lt;/div&amp;gt;\n        &amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist&amp;quot; id=&amp;quot;wishlist-total&amp;quot; title=&amp;quot;Wish List (0)&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-heart&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Wish List (0)&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/cart&amp;quot; title=&amp;quot;Shopping Cart&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-cart-shopping&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Shopping Cart&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;li class=&amp;quot;list-inline-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/checkout&amp;quot; title=&amp;quot;Checkout&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-share&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;span class=&amp;quot;d-none d-md-inline&amp;quot;&amp;gt;Checkout&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n    &amp;lt;/div&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/nav&amp;gt;\n&amp;lt;header&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;col-md-3 col-lg-4&amp;quot;&amp;gt;\n        &amp;lt;div id=&amp;quot;logo&amp;quot;&amp;gt;\n                      &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=common/home&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://demo.opencart.com/image/catalog/opencart-logo.png&amp;quot; title=&amp;quot;Your Store&amp;quot; alt=&amp;quot;Your Store&amp;quot; class=&amp;quot;img-fluid&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;\n                  &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-md-5&amp;quot;&amp;gt;&amp;lt;div id=&amp;quot;search&amp;quot; class=&amp;quot;input-group mb-3&amp;quot;&amp;gt;\n\t&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;search&amp;quot; value=&amp;quot;&amp;quot; placeholder=&amp;quot;Search&amp;quot; class=&amp;quot;form-control form-control-lg&amp;quot;&amp;gt;\n\t&amp;lt;button type=&amp;quot;button&amp;quot; data-lang=&amp;quot;en-gb&amp;quot; class=&amp;quot;btn btn-light btn-lg&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-magnifying-glass&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n      &amp;lt;div id=&amp;quot;header-cart&amp;quot; class=&amp;quot;col-md-4 col-lg-3 mb-2&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;dropdown d-grid&amp;quot;&amp;gt;\n  &amp;lt;button type=&amp;quot;button&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot; class=&amp;quot;btn btn-lg btn-inverse btn-block dropdown-toggle&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-cart-shopping&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; 0 item(s) - $0.00&amp;lt;/button&amp;gt;\n  &amp;lt;ul class=&amp;quot;dropdown-menu dropdown-menu-end p-2&amp;quot;&amp;gt;\n          &amp;lt;li class=&amp;quot;text-center p-4&amp;quot;&amp;gt;Your shopping cart is empty!&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/header&amp;gt;\n&amp;lt;main&amp;gt;\n    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;nav id=&amp;quot;menu&amp;quot; class=&amp;quot;navbar navbar-expand-lg navbar-light bg-primary&amp;quot;&amp;gt;\n      &amp;lt;div id=&amp;quot;category&amp;quot; class=&amp;quot;d-block d-sm-block d-lg-none&amp;quot;&amp;gt;Categories&amp;lt;/div&amp;gt;\n      &amp;lt;button class=&amp;quot;navbar-toggler&amp;quot; type=&amp;quot;button&amp;quot; data-bs-toggle=&amp;quot;collapse&amp;quot; data-bs-target=&amp;quot;#narbar-menu&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa-solid fa-bars&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/button&amp;gt;\n      &amp;lt;div class=&amp;quot;collapse navbar-collapse&amp;quot; id=&amp;quot;narbar-menu&amp;quot;&amp;gt;\n        &amp;lt;ul class=&amp;quot;nav navbar-nav&amp;quot;&amp;gt;\n                                    &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Desktops&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops/pc&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;PC (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops/mac&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Mac (1)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/desktops&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Desktops&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Laptops &amp;amp;amp; Notebooks&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook/macs&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Macs (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook/windows&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Windows (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/laptop-notebook&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Laptops &amp;amp;amp; Notebooks&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;Components&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/mouse&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Mice and Trackballs (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/monitor&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Monitors (2)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/printers&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Printers (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/scanner&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Scanners (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component/web-camera&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Web Cameras (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/component&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All Components&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/tablet&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Tablets&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/software&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Software&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/smartphone&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Phones &amp;amp;amp; PDAs&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/cameras&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;Cameras&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                &amp;lt;li class=&amp;quot;nav-item dropdown&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players&amp;quot; class=&amp;quot;nav-link dropdown-toggle&amp;quot; data-bs-toggle=&amp;quot;dropdown&amp;quot;&amp;gt;MP3 Players&amp;lt;/a&amp;gt;\n                &amp;lt;div class=&amp;quot;dropdown-menu&amp;quot; style=&amp;quot;margin-left: -215.953px;&amp;quot;&amp;gt;\n                  &amp;lt;div class=&amp;quot;dropdown-inner&amp;quot;&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-11&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 11 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-12&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 12 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-15&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 15 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-16&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 16 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-17&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 17 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-18&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 18 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-19&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 19 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-20&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 20 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-21&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 21 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-22&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 22 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-23&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 23 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-24&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 24 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-4&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 4 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-5&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 5 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-6&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 6 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                          &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-7&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 7 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-8&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 8 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                                  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players/test-9&amp;quot; class=&amp;quot;nav-link&amp;quot;&amp;gt;test 9 (0)&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                                              &amp;lt;/ul&amp;gt;\n                                      &amp;lt;/div&amp;gt;\n                  &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/catalog/mp3-players&amp;quot; class=&amp;quot;see-all&amp;quot;&amp;gt;Show All MP3 Players&amp;lt;/a&amp;gt;\n                &amp;lt;/div&amp;gt;\n              &amp;lt;/li&amp;gt;\n                              &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n    &amp;lt;/nav&amp;gt;\n  &amp;lt;/div&amp;gt;\n\n\n&amp;lt;div id=&amp;quot;account-login&amp;quot; class=&amp;quot;container&amp;quot;&amp;gt;\n  &amp;lt;ul class=&amp;quot;breadcrumb&amp;quot;&amp;gt;\n          &amp;lt;li class=&amp;quot;breadcrumb-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=common/home&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fas fa-home&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li class=&amp;quot;breadcrumb-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/account&amp;quot;&amp;gt;Account&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li class=&amp;quot;breadcrumb-item&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/login&amp;quot;&amp;gt;Login&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n      &amp;lt;/ul&amp;gt;\n      &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n    &amp;lt;div id=&amp;quot;content&amp;quot; class=&amp;quot;col&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n        &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;\n          &amp;lt;div class=&amp;quot;border rounded p-3 d-flex flex-column h-100&amp;quot;&amp;gt;\n            &amp;lt;h2&amp;gt;New Customer&amp;lt;/h2&amp;gt;\n            &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Register Account&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;\n            &amp;lt;p&amp;gt;By creating an account you will be able to shop faster, be up to date on an order&amp;#x27;s status, and keep track of the orders you have previously made.&amp;lt;/p&amp;gt;\n            &amp;lt;div class=&amp;quot;text-end&amp;quot;&amp;gt;\n              &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/register&amp;quot; class=&amp;quot;btn btn-primary&amp;quot;&amp;gt;Continue&amp;lt;/a&amp;gt;\n            &amp;lt;/div&amp;gt;\n          &amp;lt;/div&amp;gt;\n        &amp;lt;/div&amp;gt;\n        &amp;lt;div class=&amp;quot;col mb-3&amp;quot;&amp;gt;\n          &amp;lt;div class=&amp;quot;border rounded p-3 d-flex flex-column h-100&amp;quot;&amp;gt;\n            &amp;lt;form id=&amp;quot;form-login&amp;quot; action=&amp;quot;https://demo.opencart.com/en-gb?route=account/login.login&amp;amp;amp;login_token=ac60740705541d5f1c13e16c31&amp;quot; method=&amp;quot;post&amp;quot; data-oc-toggle=&amp;quot;ajax&amp;quot;&amp;gt;\n              &amp;lt;h2&amp;gt;Returning Customer&amp;lt;/h2&amp;gt;\n              &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;I am a returning customer&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;\n              &amp;lt;div class=&amp;quot;mb-3&amp;quot;&amp;gt;\n                &amp;lt;label for=&amp;quot;input-email&amp;quot; class=&amp;quot;col-form-label&amp;quot;&amp;gt;E-Mail Address&amp;lt;/label&amp;gt;\n                &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;email&amp;quot; value=&amp;quot;&amp;quot; placeholder=&amp;quot;E-Mail Address&amp;quot; id=&amp;quot;input-email&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;\n              &amp;lt;/div&amp;gt;\n              &amp;lt;div class=&amp;quot;mb-3&amp;quot;&amp;gt;\n                &amp;lt;label for=&amp;quot;input-password&amp;quot; class=&amp;quot;col-form-label&amp;quot;&amp;gt;Password&amp;lt;/label&amp;gt;\n                &amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;password&amp;quot; value=&amp;quot;&amp;quot; placeholder=&amp;quot;Password&amp;quot; id=&amp;quot;input-password&amp;quot; class=&amp;quot;form-control mb-1&amp;quot;&amp;gt;\n                &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/forgotten&amp;quot;&amp;gt;Forgotten Password&amp;lt;/a&amp;gt;\n              &amp;lt;/div&amp;gt;\n              &amp;lt;div class=&amp;quot;text-end&amp;quot;&amp;gt;\n                &amp;lt;button type=&amp;quot;submit&amp;quot; class=&amp;quot;btn btn-primary&amp;quot; style=&amp;quot;&amp;quot;&amp;gt;Login&amp;lt;/button&amp;gt;\n              &amp;lt;/div&amp;gt;\n                          &amp;lt;/form&amp;gt;\n          &amp;lt;/div&amp;gt;\n        &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;/div&amp;gt;\n    &amp;lt;aside id=&amp;quot;column-right&amp;quot; class=&amp;quot;col-3 d-none d-md-block&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;list-group mb-3&amp;quot;&amp;gt;\n      &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/login&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Login&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/register&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Register&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/forgotten&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Forgotten Password&amp;lt;/a&amp;gt;\n    &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/account&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;My Account&amp;lt;/a&amp;gt;\n    &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/address&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Address Book&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Wish List&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/order&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Order History&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/download&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Downloads&amp;lt;/a&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/subscription&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Subscriptions&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/reward&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Reward Points&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/returns&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Returns&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/transaction&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Transactions&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/newsletter&amp;quot; class=&amp;quot;list-group-item&amp;quot;&amp;gt;Newsletter&amp;lt;/a&amp;gt;\n  &amp;lt;/div&amp;gt;\n\n  &amp;lt;/aside&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;lt;/main&amp;gt;\n&amp;lt;footer&amp;gt;\n  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;\n    &amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Information&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/terms&amp;quot;&amp;gt;Terms &amp;amp;amp; Conditions&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/delivery&amp;quot;&amp;gt;Delivery Information&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/about-us&amp;quot;&amp;gt;About Us&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/information/privacy&amp;quot;&amp;gt;Privacy Policy&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                  &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Customer Service&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/contact&amp;quot;&amp;gt;Contact Us&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/returns.add&amp;quot;&amp;gt;Returns&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=information/sitemap&amp;quot;&amp;gt;Site Map&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;Extras&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb/brands&amp;quot;&amp;gt;Brands&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=checkout/voucher&amp;quot;&amp;gt;Gift Certificates&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/affiliate&amp;quot;&amp;gt;Affiliate&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n                    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=product/special&amp;quot;&amp;gt;Specials&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n      &amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;\n        &amp;lt;h5&amp;gt;My Account&amp;lt;/h5&amp;gt;\n        &amp;lt;ul class=&amp;quot;list-unstyled&amp;quot;&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/account&amp;quot;&amp;gt;My Account&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/order&amp;quot;&amp;gt;Order History&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/wishlist&amp;quot;&amp;gt;Wish List&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n          &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://demo.opencart.com/en-gb?route=account/newsletter&amp;quot;&amp;gt;Newsletter&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n        &amp;lt;/ul&amp;gt;\n      &amp;lt;/div&amp;gt;\n    &amp;lt;/div&amp;gt;\n    &amp;lt;hr&amp;gt;\n    &amp;lt;p&amp;gt;Powered By &amp;lt;a href=&amp;quot;https://www.opencart.com&amp;quot;&amp;gt;OpenCart&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt; Your Store \u00a9 2024&amp;lt;/p&amp;gt;\n    &amp;lt;!--\nOpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.\nPlease donate via PayPal to donate@opencart.com\n//--&amp;gt;\n  &amp;lt;/div&amp;gt;\n&amp;lt;/footer&amp;gt;\n\n&amp;lt;script src=&amp;quot;catalog/view/javascript/bootstrap/js/bootstrap.bundle.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;\n&amp;lt;script&amp;gt;(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement(&amp;#x27;script&amp;#x27;);d.innerHTML=&amp;quot;window.__CF$cv$params={r:&amp;#x27;8dac7762cb8ce2ff&amp;#x27;,t:&amp;#x27;MTczMDMwMjQzNS4wMDAwMDA=&amp;#x27;};var a=document.createElement(&amp;#x27;script&amp;#x27;);a.nonce=&amp;#x27;&amp;#x27;;a.src=&amp;#x27;/cdn-cgi/challenge-platform/scripts/jsd/main.js&amp;#x27;;document.getElementsByTagName(&amp;#x27;head&amp;#x27;)[0].appendChild(a);&amp;quot;;b.getElementsByTagName(&amp;#x27;head&amp;#x27;)[0].appendChild(d)}}if(document.body){var a=document.createElement(&amp;#x27;iframe&amp;#x27;);a.height=1;a.width=1;a.style.position=&amp;#x27;absolute&amp;#x27;;a.style.top=0;a.style.left=0;a.style.border=&amp;#x27;none&amp;#x27;;a.style.visibility=&amp;#x27;hidden&amp;#x27;;document.body.appendChild(a);if(&amp;#x27;loading&amp;#x27;!==document.readyState)c();else if(window.addEventListener)document.addEventListener(&amp;#x27;DOMContentLoaded&amp;#x27;,c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);&amp;#x27;loading&amp;#x27;!==document.readyState&amp;amp;&amp;amp;(document.onreadystatechange=e,c())}}}})();&amp;lt;/script&amp;gt;&amp;lt;iframe height=&amp;quot;1&amp;quot; width=&amp;quot;1&amp;quot; style=&amp;quot;position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;\n\n&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
