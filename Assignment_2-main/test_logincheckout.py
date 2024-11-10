@@ -15,11 +15,11 @@ def login(driver):
 
     # Chờ cho trường email có thể nhìn thấy và nhập email
     email_field = wait.until(EC.visibility_of_element_located((By.ID, "input-email")))
-    email_field.send_keys("quoctrung87377@gmail.com")
+    email_field.send_keys("minhkhoi20102003@gmail.com")
 
     # Chờ cho trường mật khẩu có thể nhìn thấy và nhập mật khẩu
     password_field = wait.until(EC.visibility_of_element_located((By.ID, "input-password")))
-    password_field.send_keys("Nozdormu1#")
+    password_field.send_keys("11111111")
 
     time.sleep(10)  # Chờ trang tải xong
 

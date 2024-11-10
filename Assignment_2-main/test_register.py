@@ -27,18 +27,18 @@ def test_register_valid_data(driver):
         # Step 2: Fill in the registration form with valid data
         first_name = "John"
         last_name = "Doe"
-        email = "johndoe@example.com"  # Use a unique email for each test run
-        telephone = "1234567890"
+        email = "johndoe@example123.com"  # Use a unique email for each test run
+        #telephone = "1234567890"
         password = "SecurePassword123"
-        confirm_password = "SecurePassword123"
+        #confirm_password = "SecurePassword123"
 
         # Fill in the registration fields
         wait.until(EC.visibility_of_element_located((By.ID, "input-firstname"))).send_keys(first_name)
         wait.until(EC.visibility_of_element_located((By.ID, "input-lastname"))).send_keys(last_name)
         wait.until(EC.visibility_of_element_located((By.ID, "input-email"))).send_keys(email)
-        wait.until(EC.visibility_of_element_located((By.ID, "input-telephone"))).send_keys(telephone)
+        #wait.until(EC.visibility_of_element_located((By.ID, "input-telephone"))).send_keys(telephone)
         wait.until(EC.visibility_of_element_located((By.ID, "input-password"))).send_keys(password)
-        wait.until(EC.visibility_of_element_located((By.ID, "input-confirm"))).send_keys(confirm_password)
+        #wait.until(EC.visibility_of_element_located((By.ID, "input-confirm"))).send_keys(confirm_password)
 
         # Step 3: Agree to the Privacy Policy
         agree_checkbox = wait.until(EC.element_to_be_clickable((By.NAME, "agree")))
@@ -105,9 +105,9 @@ def test_register_invalid_email(driver):
         wait.until(EC.visibility_of_element_located((By.NAME, "firstname"))).send_keys("John")
         wait.until(EC.visibility_of_element_located((By.NAME, "lastname"))).send_keys("Doe")
         wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("invalid-email")  # Invalid email
-        wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")
+        #wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")
         wait.until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("Password123")
-        wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")
+        #wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")
 
         # Step 3: Submit the form
         submit_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input.btn.btn-primary")))
@@ -139,10 +139,10 @@ def test_register_lower_boundary(driver):
         # Step 2: Fill in the registration form with lower boundary data
         wait.until(EC.visibility_of_element_located((By.NAME, "firstname"))).send_keys("A")  # Minimum valid first name
         wait.until(EC.visibility_of_element_located((By.NAME, "lastname"))).send_keys("B")  # Minimum valid last name
-        wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("test@example.com")  # Valid email
-        wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
+        wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("test1@example.com")  # Valid email
+        #wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
         wait.until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("Password123")  # Valid password
-        wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
+       # wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
 
         # Step 3: Submit the form
         submit_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input.btn.btn-primary")))
@@ -178,9 +178,9 @@ def test_register_above_upper_boundary(driver):
         wait.until(EC.visibility_of_element_located((By.NAME, "firstname"))).send_keys(long_first_name)
         wait.until(EC.visibility_of_element_located((By.NAME, "lastname"))).send_keys(long_last_name)
         wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("test@example.com")  # Valid email
-        wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
+        #wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
         wait.until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("Password123")  # Valid password
-        wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
+        #wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
 
         # Step 3: Submit the form
         submit_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input.btn.btn-primary")))
@@ -216,10 +216,10 @@ def test_register_special_characters_in_name(driver):
 
         wait.until(EC.visibility_of_element_located((By.NAME, "firstname"))).send_keys(special_first_name)
         wait.until(EC.visibility_of_element_located((By.NAME, "lastname"))).send_keys(special_last_name)
-        wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("test@example.com")  # Valid email
-        wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
+        wait.until(EC.visibility_of_element_located((By.NAME, "email"))).send_keys("test@example111.com")  # Valid email
+        #wait.until(EC.visibility_of_element_located((By.NAME, "telephone"))).send_keys("1234567890")  # Valid phone number
         wait.until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("Password123")  # Valid password
-        wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
+        #wait.until(EC.visibility_of_element_located((By.NAME, "confirm"))).send_keys("Password123")  # Confirm password
 
         # Step 3: Submit the form
         submit_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input.btn.btn-primary")))

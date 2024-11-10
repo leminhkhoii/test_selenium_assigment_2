@@ -42,8 +42,8 @@ def test_login_and_logout(driver):
     # Wait for the email input to appear and fill in login details
     WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.ID, "input-email"))
-    ).send_keys("quoctrung87377@gmail.com")
-    driver.find_element(By.ID, "input-password").send_keys("Nozdormu1#")
+    ).send_keys("minhkhoi20102003@gmail.com")
+    driver.find_element(By.ID, "input-password").send_keys("11111111")
     
     # Click the submit button
     driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
@@ -130,7 +130,7 @@ def test_invalid_password_login(driver):
     email_field = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.ID, "input-email"))
     )
-    email_field.send_keys("quoctrung87377@gmail.com")  # Enter a valid email
+    email_field.send_keys("minhkhoi20102003@gmail.com")  # Enter a valid email
 
     # Enter an incorrect password
     password_field = driver.find_element(By.ID, "input-password")
@@ -180,7 +180,7 @@ def test_empty_password_login(driver):
     email_field = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.ID, "input-email"))
     )
-    email_field.send_keys("quoctrung87377@gmail.com")  # Enter a valid email
+    email_field.send_keys("minhhkoi20102003@gmail.com")  # Enter a valid email
 
     # Leave the password field empty
     password_field = driver.find_element(By.ID, "input-password")
